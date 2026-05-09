@@ -6,7 +6,7 @@
   <a href="https://github.com/zhayujie/CowAgent"><img src="https://img.shields.io/github/stars/zhayujie/CowAgent?style=flat-square" alt="Stars"></a>
 </p>
 
-**CowAgent** 是我个人开发的基于大模型的超级 AI 助理，能够主动思考和任务规划、操作计算机和外部资源、创造和执行 Skills、拥有长期记忆和知识库并不断成长。支持灵活切换多种模型，能处理文本、语音、图片、文件等多模态消息，可接入微信、飞书、钉钉等平台，7*24小时运行于个人电脑或服务器中。
+**CowAgent** 是我个人开发的基于大模型的超级 AI 助理，能够主动思考和任务规划、操作计算机和外部资源、创造和执行 Skills、拥有长期记忆和知识库并不断成长。支持灵活切换多种模型，能处理文本、语音、图片、文件等多模态消息，可接入微信、飞书、钉钉等平台，7\*24小时运行于个人电脑或服务器中。
 
 # 简介
 
@@ -31,20 +31,23 @@
 
 ### 2. 环境安装
 
-支持 Linux、MacOS、Windows 操作系统，需安装 `Python`（3.7 ~ 3.13）。
+支持 Linux、MacOS、Windows 操作系统，需安装 `Python`（3.7 \~ 3.13）。
 
 **(1) 克隆项目代码：**
+
 ```bash
 git clone https://github.com/zhayujie/CowAgent
 cd CowAgent/
 ```
 
 **(2) 安装核心依赖：**
+
 ```bash
 pip3 install -r requirements.txt
 ```
 
 **(3) 安装 Cow CLI (推荐)：**
+
 ```bash
 pip3 install -e .
 ```
@@ -52,11 +55,13 @@ pip3 install -e .
 ## 二、配置
 
 复制配置模板并修改：
+
 ```bash
 cp config-template.json config.json
 ```
 
 配置示例：
+
 ```json
 {
   "channel_type": "weixin",
@@ -72,6 +77,7 @@ cp config-template.json config.json
 ## 三、运行
 
 ### 本地运行
+
 ```bash
 cow start    # 推荐
 python app.py  # 或直接运行
@@ -80,6 +86,7 @@ python app.py  # 或直接运行
 运行后默认启动 web 服务，访问 `http://localhost:9899/chat` 即可使用。
 
 ### Docker 部署
+
 ```bash
 docker run -d \
   --name cowagent \
@@ -98,4 +105,4 @@ docker run -d \
 
 # 📄 许可证
 
-本项目遵循 [MIT 开源协议](/LICENSE)。
+# 本项目遵循 [MIT 开源协议](/LICENSE)。
